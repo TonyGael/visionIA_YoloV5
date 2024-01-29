@@ -1,0 +1,32 @@
+1) Detección de objetos, qué es?
+Es un campo clace de la inteligencia artificial que implieca rders neuronales convolucionales,
+esto permite a los sistemas informáticos "ver" su entorno y detectar objetos
+e imágenes o fotogramas.
+
+Requisitos en la práctica:
+1) Nuestro modelo deberá detectar múltiples objetos. Deberá detectar al menos una clase.
+
+2) Deberá entregar la posición en el espacio del objeto. Tener la posibilidad de realizar la inferencia en TR.
+
+Procedimientos para el mismo ( 3 etapas claves):
+1) Crear dataset:
+    a) almacenar un conjunto de images del objeto que deseamos detectar.
+    b) Etiquetar las imagenes señalando el objeto a detectar.
+
+2) Entrenamiento:
+    a) debemos elegor nuestri marco de aprendizaje prederido para entrenar nuestra red neuronal.
+
+3) Inferencia:
+    a) debemos poner en practica lo que nuestra red neuronal aprendio 
+    luego del entrenamiento, en ese caso lo haremos en tiempo real.
+
+MArcos de aprendizaje:
+Tensor Flow             theano          scikit learn
+caffe2                  yolo            pytorch
+
+yoloV5:
+    YOLOv5 (You Only Look Once). Este es un sistema de código abierto para la
+    detección de objetos en tiempo real pre-entrenado con el dataset COCO,
+    el cual hace uso de una única red neuronal convolucional (CNN) para
+    detectar objetos en imágenes.
+
